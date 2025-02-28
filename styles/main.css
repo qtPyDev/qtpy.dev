@@ -1,3 +1,18 @@
+:root {
+  --light-bg: rgba(238, 238, 238, 1.0);
+
+  --navbar-btn-bg: rgba(102, 102, 102, 1.0);
+  --navbar-btn-bg-hover: rgba(151, 151, 151, 1.0);
+  --navbar-btn-fg: white;
+
+  --marquee-bg: rgba(0, 0, 255, 1.0);
+  --marquee-fg: rgba(151, 151, 151, 1.0);
+  --marquee-text: white;
+  --marquee-text-url: rgba(255, 255, 0, 1.0);
+}
+
+
+
 body {
   background: black;
   font-family: chicago, sans-serif;
@@ -7,12 +22,12 @@ body {
   max-width: 1000px;
   margin: auto;
   text-align: center;
-  background: rgba(0, 0, 50, 1.0);
-  color: white;
+  background: var(--light-bg);
+  color: black;
 }
 
 .site-summary {
-  background: rgba(0, 50, 0, 1.0);
+/*  background: rgba(0, 50, 0, 1.0);*/
   text-align: left;
   margin-left: 5%;
   margin-right: 5%;
@@ -59,21 +74,26 @@ body {
 }
 
 .navbar {
-  background: rgba(0, 50, 0, 1.0);
   display: flex;
-/*  column-gap: 10%;*/
-/*  justify-content: space-between;*/
-/*  align-items: stretch;*/
 }
 
 .navbar-btn {
   width: 200%;
+  background: var(--navbar-btn-bg);
+  color: var(--navbar-btn-fg); 
+  border-top-left-radius: 40px 40px;
+  border-top-right-radius: 80px 80px;
+}
+
+.navbar-btn:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .marquee {
   margin: auto;
-  background-color: blue;
-  color: white;
+  background-color: var(--marquee-bg);
+  color: var(--marquee-fg);
   border-style: solid;
   border-width: 10px;
   white-space: nowrap;
@@ -94,13 +114,15 @@ body {
 }
 
 .marquee-text {
-  color: rgba(255, 255, 255, 1.0);
+  color: var(--marquee-text);
 }
 .marquee-text-url {
-  color: rgba(255, 255, 0, 1.0);
+  color: var(--marquee-text-url);
 }
 .marquee:hover > .marquee-text-url {
-  color: rgba(255, 255, 0, 1.0);
+  color: var(--marquee-text-url);
   font-style: bold;
+  text-decoration: underline;
+  cursor: pointer;
   scale: 125%;
 }
