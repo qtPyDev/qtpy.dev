@@ -1,0 +1,12 @@
+.font-grey {
+  color: rgba(102, 102, 102, 1.0);
+}
+
+.font-link {
+  color: rgba(0, 136, 204, 1.0);
+}
+
+.font-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
