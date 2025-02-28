@@ -26,6 +26,15 @@ body {
   color: black;
 }
 
+.img-container-centre {
+  text-align: center;
+}
+
+.img-std {
+  border-radius: 40px 40px;
+  filter: drop-shadow(5px 5px);
+}
+
 .site-summary {
 /*  background: rgba(0, 50, 0, 1.0);*/
   text-align: left;
