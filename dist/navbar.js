@@ -10,10 +10,10 @@ function createButton(name, linkPath) {
 }
 const navbar = document.getElementById("navbar");
 if (navbar) {
-    navbar.appendChild(createButton("Home", "./index.html"));
-    navbar.appendChild(createButton("Projects", "https://github.com/qtPyDev"));
-    navbar.appendChild(createButton("Gallery", "https://qtpy.straw.page/gallery"));
-    navbar.appendChild(createButton("Contact", "./contact.html"));
-    navbar.appendChild(createButton("About Me", "./aboutme.html"));
+    navbar.appendChild(createButton("home", "./index.html"));
+    navbar.appendChild(createButton("projects", "https://github.com/qtPyDev"));
+    navbar.appendChild(createButton("gallery", "https://qtpy.straw.page/gallery"));
+    navbar.appendChild(createButton("contact", "./contact.html"));
+    navbar.appendChild(createButton("about me", "./aboutme.html"));
 }
 ;

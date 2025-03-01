@@ -1,11 +1,14 @@
 :root {
   --light-bg: rgba(238, 238, 238, 1.0);
+  --light-fg: rgba(238, 238, 238, 1.0);
 
   --navbar-btn-bg: rgba(102, 102, 102, 1.0);
   --navbar-btn-bg-hover: rgba(151, 151, 151, 1.0);
   --navbar-btn-fg: white;
 
-  --marquee-bg: rgba(0, 0, 255, 1.0);
+  --marquee-bg: rgba(0, 0, 0, 1.0);
+  --marquee-bg-img: url(../media/dots.png);
+  --marquee-border: rgba(102, 102, 102, 1.0);
   --marquee-fg: rgba(151, 151, 151, 1.0);
   --marquee-text: white;
   --marquee-text-url: rgba(255, 255, 0, 1.0);
@@ -101,8 +104,13 @@ body {
 
 .marquee {
   margin: auto;
+  background-image: var(--marquee-bg-img);
   background-color: var(--marquee-bg);
+
   color: var(--marquee-fg);
+  font-family: 'Courier New', monospace;
+
+  border-color: var(--marquee-border);
   border-style: solid;
   border-width: 10px;
   white-space: nowrap;
@@ -135,3 +143,30 @@ body {
   cursor: pointer;
   scale: 125%;
 }
+
+.footer {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+/*  background: purple;*/
+  color: var(--light-fg);
+}
+
+.footer-container {
+  display: flex;
+  text-align: left;
+  gap: 15%;
+}
+
+.footer-explore {
+  width: 200%;
+}
+
+.footer-support {
+  width: 200%;
+}
+
+.footer-other {
+  width: 200%;
+}
+
