@@ -170,3 +170,15 @@ body {
   width: 200%;
 }
 
+.ko-fi-container {
+  text-align: center;
+}
+
+.ko-fi-btn {
+  width: 30%;
+}
+
+.ko-fi-btn:hover {
+  scale: 105%;
+  cursor: pointer;
+}
