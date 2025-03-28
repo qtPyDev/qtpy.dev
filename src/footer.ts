@@ -34,6 +34,8 @@ if(footerExplore) {
         createLink("projects", "https://github.com/qtPyDev", "p"));
     footerExplore.appendChild(
         createLink("gallery", "https://qtpy.straw.page/gallery", "p"));
+    footerExplore.appendChild(
+        createLink("donate", "./donate.html", "p"))
 };
 
 if(footerSupport) {

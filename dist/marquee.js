@@ -49,6 +49,8 @@ textArr = [
     'i stream sometimes on twitch.tv/qtpyx%https://twitch.tv/qtpyx%',
     'now with extra pickles !',
     'if u hate me ur literally a strogg',
-    '100 percent satisfaction guarenteed or ur money back !'
+    '100 percent satisfaction guarenteed or ur money back !',
+    'buy me a coffee on ko-fi <3 <3 %https://ko-fi.com/qtpyx%',
+    'they hate me cuz they aint me'
 ];
 window.setInterval(updateMarqueeText, 15000);
